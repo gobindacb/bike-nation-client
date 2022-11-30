@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import DashboardLayout from "../../Layout/DashboardLayout";
 import Main from "../../Layout/Main";
+import Blog from "../../Pages/Blog/Blog";
 import CatDetails from "../../Pages/Categories/CatDetails";
 import Categories from "../../Pages/Categories/Categories";
 import AllUsers from "../../Pages/Dashboard/AllUsers/AllUsers";
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
                 path: '/categories/:id',
                 element: <CatDetails></CatDetails>,
                 // loader: ({ params }) => (`https://bike-nation-server-tau.vercel.app/categories/${params.id}`)
+            },
+            {
+                path: '/blog',
+                element: <Blog></Blog>
             }
 
         ]
