@@ -10,21 +10,21 @@ const CategoryCards = ({ selectedDate }) => {
     // , isLoading wiil set after categories
     // const { data: categories = [] } = useQuery({
     //     queryKey: ['categories'],
-    //     queryFn: () => fetch('http://localhost:5000/categories')
+    //     queryFn: () => fetch('https://bike-nation-server-tau.vercel.app/categories')
     //         .then(res => res.json())
     // })
 
     const { data: categories = [] } = useQuery({
         queryKey: ['categories'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/categories');
+            const res = await fetch('https://bike-nation-server-tau.vercel.app/categories');
             const data = await res.json();
             return data
         }
     })
 
     // useEffect(() => {
-    //     fetch('http://localhost:5000/categories')
+    //     fetch('https://bike-nation-server-tau.vercel.app/categories')
     //         .then(res => res.json())
     //         .then(data => setCategories(data))
     // }, [])

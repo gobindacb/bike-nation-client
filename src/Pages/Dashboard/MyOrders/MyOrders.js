@@ -2,11 +2,11 @@ import { useQuery } from '@tanstack/react-query';
 import React, { useContext } from 'react';
 import { AuthContext } from '../../../contexts/AuthProvider';
 
-const MyOrders = () => {
+const MyOrders = ({ booking }) => {
 
     const { user } = useContext(AuthContext);
 
-    const url = `http://localhost:5000/bookings?email=${user?.email}`;
+    const url = `https://bike-nation-server-tau.vercel.app/bookings?email=${user?.email}`;
 
     const { data: bookings = [], } = useQuery({
         queryKey: ['bookings', user?.email],
@@ -41,7 +41,7 @@ const MyOrders = () => {
                     <tbody>
                         {
                             Array.isArray &&
-                            bookings.map((booking, i) => <tr key={booking._id}>
+                            bookings?.map((booking, i) => <tr key={booking._id}>
                                 <th>
                                     {i + 1}
                                 </th>

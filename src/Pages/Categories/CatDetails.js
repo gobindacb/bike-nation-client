@@ -9,7 +9,7 @@ const CatDetails = () => {
     const [item, setItem] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://bike-nation-server-tau.vercel.app/products')
             .then(res => res.json())
             .then(data => setBikes(data))
     }, [])

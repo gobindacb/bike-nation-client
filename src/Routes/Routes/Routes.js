@@ -36,7 +36,7 @@ const router = createBrowserRouter([
             {
                 path: '/categories/:id',
                 element: <CatDetails></CatDetails>,
-                // loader: ({ params }) => (`http://localhost:5000/categories/${params.id}`)
+                // loader: ({ params }) => (`https://bike-nation-server-tau.vercel.app/categories/${params.id}`)
             }
 
         ]

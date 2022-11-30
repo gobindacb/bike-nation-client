@@ -7,7 +7,7 @@ const CategoryCart = ({ category }) => {
     // const { bikes, setBikes } = useState([]);
 
     // useEffect(() => {
-    //     fetch(`http://localhost:5000/categories/${id}`)
+    //     fetch(`https://bike-nation-server-tau.vercel.app/categories/${id}`)
     //         .then(res => res.json())
     //         .then(data => setBikes(data))
     // })

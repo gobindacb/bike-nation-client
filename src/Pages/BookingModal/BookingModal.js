@@ -34,7 +34,7 @@ const BookingModal = ({ item, setItem }) => {
         }
 
         // console.log(booking);
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://bike-nation-server-tau.vercel.app/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
