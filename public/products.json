@@ -1,0 +1,218 @@
+[
+    {
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category_id": "01",
+        "rating": {
+            "number": 4.5,
+            "badge": "Excellent"
+        },
+        "total_enroll": 488,
+        "orginal_price": 199,
+        "resale_price": 110,
+        "used_years": 1,
+        "name": "BICYCLE",
+        "title": "Camelia cycle",
+        "id": "01",
+        "location": "Wari",
+        "product_condition": "good",
+        "seller": {
+            "name": "Hector Gercia",
+            "published_date": "2022-08-24 17:27:34"
+        },
+        "thumbnail_url": "",
+        "image_url": "https://cdn.pixabay.com/photo/2019/08/13/20/51/bike-4404230__340.jpg",
+        "details": "Single hand used good condition"
+    },
+    {
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category_id": "01",
+        "rating": {
+            "number": 4.5,
+            "badge": "Excellent"
+        },
+        "total_enroll": 488,
+        "orginal_price": 230,
+        "resale_price": 190,
+        "used_years": 3,
+        "name": "BICYCLE",
+        "title": "Hero cycle",
+        "id": "01",
+        "location": "Narayngonj",
+        "product_condition": "Fine",
+        "seller": {
+            "name": "Hector Gercia",
+            "published_date": "2022-08-24 17:27:34"
+        },
+        "thumbnail_url": "",
+        "image_url": "https://i.pinimg.com/originals/42/fd/6c/42fd6c03b176c62e7e1bdf1c0b3c0e32.jpg",
+        "details": "Single hand used good condition"
+    },
+    {
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category_id": "02",
+        "rating": {
+            "number": 4.5,
+            "badge": "Excellent"
+        },
+        "total_enroll": 488,
+        "orginal_price": 6500,
+        "resale_price": 3900,
+        "used_years": 2,
+        "name": "MOTOR-BIKE",
+        "title": "CBR 190",
+        "id": "02",
+        "location": "Ok",
+        "product_condition": "good",
+        "seller": {
+            "name": "Hector Gercia",
+            "published_date": "2022-08-24 17:27:34"
+        },
+        "thumbnail_url": "",
+        "image_url": "https://nationalmcmuseum.org/wp-content/uploads/2020/11/1964-suzuki-m15_1.jpg",
+        "details": "Single hand used good condition"
+    },
+    {
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category_id": "02",
+        "rating": {
+            "number": 4.5,
+            "badge": "Excellent"
+        },
+        "total_enroll": 488,
+        "orginal_price": 1199,
+        "resale_price": 1110,
+        "used_years": 1,
+        "name": "MOTOR-BIKE",
+        "title": "Pulser 870",
+        "id": "02",
+        "location": "Dhanmondi",
+        "product_condition": "good",
+        "seller": {
+            "name": "Hector Gercia",
+            "published_date": "2022-08-24 17:27:34"
+        },
+        "thumbnail_url": "",
+        "image_url": "https://cdn.motor1.com/images/mgl/2bVWM/s3/cheaper-to-keep-her-why-you-should-hold-on-to-your-old-bike.jpg",
+        "details": "Single hand used good condition"
+    },
+    {
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category_id": "03",
+        "rating": {
+            "number": 4.5,
+            "badge": "Excellent"
+        },
+        "total_enroll": 488,
+        "orginal_price": 3199,
+        "resale_price": 2110,
+        "used_years": 4,
+        "name": "E-BIKE",
+        "title": "Electra 554",
+        "id": "03",
+        "location": "Uttara",
+        "product_condition": "good",
+        "seller": {
+            "name": "Hector Gercia",
+            "published_date": "2022-08-24 17:27:34"
+        },
+        "thumbnail_url": "",
+        "image_url": "https://www.retrosetup.com/wp-content/uploads/2019/12/munro-2.0-red.jpg",
+        "details": "Single hand used good condition"
+    },
+    {
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category_id": "03",
+        "rating": {
+            "number": 4.5,
+            "badge": "Excellent"
+        },
+        "total_enroll": 488,
+        "orginal_price": 67000,
+        "resale_price": 50110,
+        "used_years": 2,
+        "name": "E-BIKE",
+        "title": "Dalina 554",
+        "id": "03",
+        "location": "Banani",
+        "product_condition": "good",
+        "seller": {
+            "name": "Hector Gercia",
+            "published_date": "2022-08-24 17:27:34"
+        },
+        "thumbnail_url": "",
+        "image_url": "https://sc02.alicdn.com/kf/HTB1E2QgAACWBuNjy0Fa760UlXXaE/222462697/HTB1E2QgAACWBuNjy0Fa760UlXXaE.png",
+        "details": "Single hand used good condition"
+    },
+    {
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category_id": "04",
+        "rating": {
+            "number": 4.5,
+            "badge": "Excellent"
+        },
+        "total_enroll": 488,
+        "orginal_price": 90000,
+        "resale_price": 71900,
+        "used_years": 2,
+        "name": "SCOOTY",
+        "title": "Husik 654",
+        "id": "04",
+        "location": "Mirpur",
+        "product_condition": "good",
+        "seller": {
+            "name": "Hector Gercia",
+            "published_date": "2022-08-24 17:27:34"
+        },
+        "thumbnail_url": "",
+        "image_url": "https://imgnew.outlookindia.com/public/uploads/articles/2018/12/4/hero_1_20181204.jpg",
+        "details": "Single hand used good condition"
+    },
+    {
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category_id": "04",
+        "rating": {
+            "number": 4.5,
+            "badge": "Excellent"
+        },
+        "total_enroll": 488,
+        "orginal_price": 21199,
+        "resale_price": 20110,
+        "used_years": 1,
+        "name": "SCOOTY",
+        "title": "Jenia 322",
+        "id": "04",
+        "location": "Khilpara",
+        "product_condition": "good",
+        "seller": {
+            "name": "Hector Gercia",
+            "published_date": "2022-08-24 17:27:34"
+        },
+        "thumbnail_url": "",
+        "image_url": "https://media.zigcdn.com/media/content/2019/Feb/hero-electric-exchange-offer-2_720x540.jpg",
+        "details": "Single hand used good condition"
+    }
+]

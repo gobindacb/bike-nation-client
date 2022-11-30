@@ -1,0 +1,27 @@
+[
+    {
+        "id": "01",
+        "img": "https://off.road.cc/sites/default/files/styles/970wide/public/thumbnails/image/Vitus%20Sentier%2027%20VRS%20hardtail%20Detail%20Whole%20bike-7.jpg?itok=wk6_6Nwk",
+        "name": "BICYCLE"
+    },
+    {
+        "id": "02",
+        "img": "https://teja8.kuikr.com/cars/images/desktop/used-bikes.jpeg",
+        "name": "MOTOR-BIKE"
+    },
+    {
+        "id": "03",
+        "img": "https://www.bikes4sale.in/pictures/default/hero-electric-flash-la/hero-electric-flash-la-pic-2.jpg",
+        "name": "E-BIKE"
+    },
+    {
+        "id": "04",
+        "img": "https://i.ytimg.com/vi/04Pust9JKn4/maxresdefault.jpg",
+        "name": "SCOOTY"
+    },
+    {
+        "id": "05",
+        "img": "",
+        "name": "All BIKES"
+    }
+]
