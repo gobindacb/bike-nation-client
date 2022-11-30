@@ -17,7 +17,7 @@ const Blog = () => {
                     </div>
                     <div>
                         <h3 className="font-semibold">What is a unit test? Why should we write unit tests?</h3>
-                        <p className="mt-1 dark:text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, fugit? Aspernatur, ullam enim, odit eaque quia rerum ipsum voluptatem consequatur ratione, doloremque debitis? Fuga labore omnis minima, quisquam delectus culpa!</p>
+                        <p className="mt-1 dark:text-gray-400">The main objective of unit testing is to isolate written code to test and determine if it works as intended. Unit testing is an important step in the development process, because if done correctly, it can help detect early flaws in code which may be more difficult to find in later testing stages.</p>
                     </div>
                     <div>
                         <h3 className="font-semibold">Lorem ipsum dolor sit amet.</h3>
