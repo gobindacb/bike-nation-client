@@ -3,7 +3,7 @@ import React from 'react';
 const Blog = () => {
     return (
         <div>
-            <p>Welcom to Bike Blog</p>
+            <p>Welcome to Bike Blog</p>
         </div>
     );
 };
