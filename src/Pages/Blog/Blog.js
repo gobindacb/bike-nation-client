@@ -13,10 +13,10 @@ const Blog = () => {
                     </div>
                     <div>
                         <h3 className="font-semibold">How does prototypical inheritance work?</h3>
-                        <p className="mt-1 dark:text-gray-400">The Prototypal Inheritance is a feature in javascript used to add methods and properties in objects. It is a method by which an object can inherit the properties and methods of another object. Traditionally, in order to get and set the [[Prototype]] of an object, we use Object. getPrototypeOf and Object</p>
+                        <p className="mt-1 dark:text-gray-400">The Prototypal Inheritance is a feature in javascript used to add methods and properties in objects. It is a method by which an object can inherit the properties and methods of another object. Traditionally, in order to get and set the Prototype of an object, we use Object. getPrototypeOf and Object</p>
                     </div>
                     <div>
-                        <h3 className="font-semibold">Lorem ipsum dolor sit amet.</h3>
+                        <h3 className="font-semibold">What is a unit test? Why should we write unit tests?</h3>
                         <p className="mt-1 dark:text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, fugit? Aspernatur, ullam enim, odit eaque quia rerum ipsum voluptatem consequatur ratione, doloremque debitis? Fuga labore omnis minima, quisquam delectus culpa!</p>
                     </div>
                     <div>
