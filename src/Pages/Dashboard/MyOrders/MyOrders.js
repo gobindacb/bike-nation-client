@@ -71,7 +71,6 @@ const MyOrders = ({ booking }) => {
                             </tr>)
                         }
 
-
                     </tbody>
 
 
