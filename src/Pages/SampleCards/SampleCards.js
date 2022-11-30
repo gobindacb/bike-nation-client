@@ -35,8 +35,8 @@ const SampleCards = () => {
     return (
         <div className='mt-16'>
             <div className='text-center'>
-                <p className='text-primary text-xl font-bold uppercase'>Our Services</p>
-                <h3 className='text-3xl font-semibold'>Services We Provide</h3>
+                <p className='text-primary text-xl font-bold uppercase'>BIKE NATION</p>
+                <h3 className='text-3xl font-semibold'>Sell and Buy Used Bike Categories</h3>
                 <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6 m-8'>
                     {
                         samplesData.map(sample => <Samples
