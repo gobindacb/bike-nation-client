@@ -70,10 +70,7 @@ const MyOrders = ({ booking }) => {
                                 </th>
                             </tr>)
                         }
-
                     </tbody>
-
-
                 </table>
             </div>
         </div>
