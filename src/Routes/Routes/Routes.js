@@ -11,12 +11,16 @@ import Login from "../../Pages/Login/Login";
 import SignUp from "../../Pages/SignUp/SignUp";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import AdminRoute from "./AdminRoute/AdminRoute";
+import AddProducts from "../../Pages/AddProducts/AddProducts"
+import MyProducts from "../../Pages/MyProducts/MyProducts";
+import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -57,6 +61,14 @@ const router = createBrowserRouter([
             {
                 path: "/dashboard/allusers",
                 element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
+            },
+            {
+                path: "/dashboard/addproduct",
+                element: <AddProducts></AddProducts>
+            },
+            {
+                path: '/dashboard/myproducts',
+                element: <MyProducts></MyProducts>
             }
         ]
     }

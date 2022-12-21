@@ -1,15 +1,14 @@
 import { useQuery } from '@tanstack/react-query';
 import React, { useContext } from 'react';
-import { AuthContext } from '../../../contexts/AuthProvider';
+import { AuthContext } from '../../contexts/AuthProvider';
 
-const MyOrders = () => {
-
+const MyProducts = () => {
     const { user } = useContext(AuthContext);
 
-    const url = `https://bike-nation-server-tau.vercel.app/bookings?email=${user?.email}`;
+    const url = `https://bike-nation-server-tau.vercel.app/products?email=${user?.email}`;
 
-    const { data: bookings = [], } = useQuery({
-        queryKey: ['bookings', user?.email],
+    const { data: products = [], } = useQuery({
+        queryKey: ['products', user?.email],
         queryFn: async () => {
             const res = await fetch(url, {
                 headers: {
@@ -34,14 +33,15 @@ const MyOrders = () => {
                             </th>
                             <th>Image and Name</th>
                             <th>Price</th>
-                            <th>Booking Date</th>
-                            <th>Payment</th>
+                            <th>Publish Date</th>
+                            <th>Addvertise</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            bookings?.length &&
-                            bookings?.map((booking, i) => <tr key={booking._id}>
+                            products?.length &&
+                            products?.map((product, i) => <tr key={product._id}>
                                 <th>
                                     {i + 1}
                                 </th>
@@ -49,24 +49,26 @@ const MyOrders = () => {
                                     <div className="flex items-center space-x-3">
                                         <div className="avatar">
                                             <div className="mask mask-squircle w-20 h-20">
-                                                <img src={booking.image} alt="Avatar Tailwind CSS Component" />
+                                                <img src={product?.image_url} alt="Avatar Tailwind CSS Component" />
                                             </div>
                                         </div>
                                         <div>
-                                            <div className="font-bold">{booking.itemTitle
-                                            }</div>
+                                            <div className="font-bold text-xs">{product.name}</div>
+                                            <div className="font-bold">{product.title}</div>
+
 
                                         </div>
                                     </div>
                                 </td>
                                 <td>
-                                    $ {booking.price}
-
+                                    <div>
+                                        <div className="font-bold text-xs">${product.resale_price}</div>
+                                        <div className="font-bold">${product.orginal_price}</div>
+                                    </div>
                                 </td>
-                                <td>{booking.bookingDate
-                                }</td>
+                                <td>{product.published_date}</td>
                                 <th>
-                                    <button className="btn btn-ghost btn-xs">Make Payment</button>
+                                    <button className="btn btn-ghost btn-xs">Make Addvertise</button>
                                 </th>
                             </tr>)
                         }
@@ -77,4 +79,4 @@ const MyOrders = () => {
     );
 };
 
-export default MyOrders;
+export default MyProducts;

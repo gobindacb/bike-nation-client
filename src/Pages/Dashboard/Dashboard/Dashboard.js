@@ -6,7 +6,7 @@ const Dashboard = () => {
     const { user } = useContext(AuthContext);
     return (
         <div>
-            <p>Dashboard</p>
+            <p className='text-3xl text-center font-bold'>Dashboard of {user?.displayName}</p>
         </div>
     );
 };

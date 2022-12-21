@@ -1,3 +1,4 @@
+import { GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
@@ -8,7 +9,7 @@ import useToken from '../../hooks/useToken';
 const SignUp = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
-    const { createUser, updateUser } = useContext(AuthContext);
+    const { createUser, updateUser, providerLogin } = useContext(AuthContext);
     const [signUpError, setSignUpError] = useState('');
     const [createdUserEmail, setCreatedUserEmail] = useState('')
     const [token] = useToken(createdUserEmail);
@@ -16,6 +17,19 @@ const SignUp = () => {
 
     if (token) {
         navigate('/');
+    }
+
+    const googleProvider = new GoogleAuthProvider()
+
+    const handleGoogleSignIn = () => {
+        providerLogin(googleProvider)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                toast.success('Cngrats!!! User Created Successfully...you are welcome to Bike-Nation')
+                navigate('/')
+            })
+            .catch(error => console.error(error))
     }
 
     const handleSignUp = (data) => {
@@ -132,7 +146,7 @@ const SignUp = () => {
                 </form>
                 <p>Already have an account? <Link className='text-primary font-bold' to='/login'>Login</Link> </p>
                 <div className="divider">OR</div>
-                <button className='btn btn-outline w-full'>Start with Google</button>
+                <button onClick={handleGoogleSignIn} className='btn btn-outline w-full'>Start with Google</button>
             </div>
         </div>
     );

@@ -28,6 +28,23 @@ const AllUsers = () => {
             })
     }
 
+    const handleMakeSeller = id => {
+        fetch(`https://bike-nation-server-tau.vercel.app/users/seller/${id}`, {
+            method: 'PUT',
+            headers: {
+                authorization: `bearer ${localStorage.getItem('accessToken')}`
+            }
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.modifiedCount > 0) {
+                    toast.success('Make Seller Successfully')
+                    refetch();
+                }
+                console.log(data);
+            })
+    }
+
 
     return (
         <div>
@@ -76,6 +93,13 @@ const AllUsers = () => {
                                         <button onClick={() => handleMakeAdmin(user._id)} className="btn btn-primary btn-xs">Make Admin</button>
                                         ||
                                         <button className='btn btn-xs btn-success'>Admin</button>
+                                    }
+
+                                    {
+                                        user?.role !== 'seller' &&
+                                        <button onClick={() => handleMakeSeller(user._id)} className="btn btn-primary btn-xs">Make Seller</button>
+                                        ||
+                                        <button className='btn btn-xs btn-success'>Seller</button>
                                     }
                                 </th>
                                 <th>

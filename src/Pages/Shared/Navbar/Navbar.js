@@ -19,7 +19,7 @@ const Navbar = () => {
             <>
                 <li><Link to='/dashboard'>Dashboard</Link></li>
                 <li><button onClick={handleLogOut}>Sign Out</button></li>
-                <p>{user?.displayName}</p>
+                <li> <p className='font-bold text-secondary'>{user?.displayName}</p></li>
             </>
             : <li><Link to='/login'>Login</Link></li>}
     </React.Fragment>

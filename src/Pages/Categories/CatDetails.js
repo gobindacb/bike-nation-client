@@ -4,15 +4,20 @@ import CatDetailsCards from './CatDetailsCards'
 
 
 
+
 const CatDetails = () => {
     const [bikes, setBikes] = useState([]);
     const [item, setItem] = useState(null);
+
+
 
     useEffect(() => {
         fetch('https://bike-nation-server-tau.vercel.app/products')
             .then(res => res.json())
             .then(data => setBikes(data))
     }, [])
+
+
 
 
     return (
